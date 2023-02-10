@@ -10,7 +10,7 @@
   "plugins": [
     {
       "author": "nicholasdewitt",
-      "compatibility": [1],
+      "compatibility": [1,2],
       "description": "Send notification to Telegram bot after conversion steps",
       "icon": "https://raw.githubusercontent.com/Josh5/unmanic.plugin.encoder_video_libvpx_vp9/master/icon.png",
       "id": "notify-telegram",
