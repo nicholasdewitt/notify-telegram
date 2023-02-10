@@ -1,0 +1,25 @@
+{
+  "repo": {
+    "id": "repository.nicholasdewitt",
+    "name": "Nick's Telegram Notification Plugin for Unmanic",
+    "icon": "https://raw.githubusercontent.com/Josh5/unmanic-plugins/master/icon.png",
+    "repo_data_directory": "https://raw.githubusercontent.com/nicholasdewitt/unmanic-telegram/main/",
+    "repo_data_url": "https://raw.githubusercontent.com/nicholasdewitt/unmanic-telegram/main/repo.json"
+                      
+  },
+  "plugins": [
+    {
+      "author": "nicholasdewitt",
+      "compatibility": [1],
+      "description": "Send notification to Telegram bot after conversion steps",
+      "icon": "https://raw.githubusercontent.com/Josh5/unmanic.plugin.encoder_video_libvpx_vp9/master/icon.png",
+      "id": "notify-telegram",
+      "name": "Notify Telegram",
+      "priorities": {
+        "on_postprocessor_task_results": 0
+      },
+      "tags": "post-processor",
+      "version": "0.0.1"
+    }
+  ]
+}
