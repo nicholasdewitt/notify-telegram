@@ -3,7 +3,7 @@
     "id": "repository.nicholasdewitt",
     "name": "Nick's Telegram Notification Plugin for Unmanic",
     "icon": "https://raw.githubusercontent.com/nicholasdewitt/notify-telegram/main/icon.png",
-    "repo_data_directory": "https://raw.githubusercontent.com/nicholasdewitt/notify-telegram/",
+    "repo_data_directory": "https://raw.githubusercontent.com/nicholasdewitt/notify-telegram/main/",
     "repo_data_url": "https://raw.githubusercontent.com/nicholasdewitt/notify-telegram/main/repo.json"
                       
   },
