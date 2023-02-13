@@ -10,7 +10,7 @@
   "plugins": [
     {
       "author": "nicholasdewitt",
-      "compatibility": [1,2],
+      "compatibility": [2],
       "description": "Send notification to Telegram bot after conversion steps",
       "icon": "https://raw.githubusercontent.com/nicholasdewitt/notify-telegram/main/icon.png",
       "id": "notify-telegram",
