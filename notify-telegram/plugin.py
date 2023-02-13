@@ -14,14 +14,14 @@ class Settings(PluginSettings):
 
 
 
-def notify(source_data, Token, Chat_ID):
+def notify(data, source_data, Token, Chat_ID):
 
-    #if data.get('task_processing_success') and data.get('file_move_processes_success'):
-        #message = 
-    message = "hello from your telegram bot"
+    if data.get('task_processing_success') and data.get('file_move_processes_success'):
+        message = f"Unmanic: ✅ Successful Processing - {source_data}"
+    else:
+        message = f"Unmanic: ❌ Error Occurred Processing - {source_data}"
     url = f"https://api.telegram.org/bot{Token}/sendMessage?chat_id={Chat_ID}&text={message}"
     requests.get(url).json()
-    # print(result.text)
 
 
 def on_postprocessor_task_results(data):
@@ -42,6 +42,6 @@ def on_postprocessor_task_results(data):
         settings = Settings()
     Token = settings.get_setting('userToken')
     Chat_ID = settings.get_setting('userChatID')
-    notify(data.get('source_data'), Token, Chat_ID)
+    notify(data,data.get('source_data'), Token, Chat_ID)
 
     return data
